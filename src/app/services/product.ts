@@ -15,4 +15,7 @@ export class ProductService {
   getProducts(): Product[] {
     return this.products;
   }
+  deleteProduct(id: number): void {
+    this.products = this.products.filter(p => p.id !== id);
+}
 }

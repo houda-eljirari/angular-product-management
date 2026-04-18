@@ -17,4 +17,9 @@ export class ProductListComponent {
   constructor(private productService: ProductService) {
     this.products = this.productService.getProducts();
   }
+
+  deleteProduct(id: number) {
+    this.productService.deleteProduct(id);
+    this.products = this.productService.getProducts(); // refresh
+  }
 }
