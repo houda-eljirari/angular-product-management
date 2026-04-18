@@ -2,58 +2,49 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
 
-## Development server
+## Description
 
-To start a local development server, run:
+Ce projet est une application web développée avec Angular permettant la gestion de produits.
+Il s'agit d'un TP visant à comprendre les concepts de base d’Angular moderne (standalone components, services, routing).
+
+---
+
+## Fonctionnalités réalisées
+
+* ✔ Affichage de la liste des produits
+* ✔ Utilisation d’un service pour gérer les données
+* ✔ Suppression d’un produit
+* ✔ Architecture basée sur les composants (Component / Service / Model)
+* ✔ Routing avec Angular
+
+---
+
+## Technologies utilisées
+
+* Angular (Standalone Components)
+* TypeScript
+* HTML / CSS
+
+---
+
+## Lancer le projet
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Puis ouvrir :
+http://localhost:4200
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Avancement du TP
 
-```bash
-ng generate component component-name
-```
+Jusqu'à présent, j’ai mis en place l’environnement de développement Angular et créé la structure de base de l’application en utilisant des composants standalone. J’ai développé un service pour gérer les données des produits, ainsi qu’un modèle représentant un produit. Ensuite, j’ai implémenté l’affichage de la liste des produits à l’aide d’un composant dédié, en utilisant le routing pour la navigation. Enfin, j’ai ajouté une fonctionnalité permettant de supprimer un produit depuis l’interface utilisateur.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+![Product List](./screenshots/product-list.png)
 
-## Building
+---
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
